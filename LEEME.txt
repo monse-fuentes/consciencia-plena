@@ -1,32 +1,17 @@
-CONSCIENCIA PLENA PSICOLOGÍA — BASE T07
+CONSCIENCIA PLENA — ACTUALIZACIÓN T05, T06 Y T03
 
-1. Extrae el ZIP. Copia la carpeta consciencia-plena dentro de C:/xampp/htdocs/.
-2. En XAMPP inicia Apache. No necesitas iniciar MySQL para esta versión.
-3. Abre http://localhost/consciencia-plena/.
-También puedes abrir index.html directamente: no requiere dependencias ni internet.
-4. En VS Code: Archivo > Abrir carpeta > consciencia-plena.
+Extrae el ZIP y copia el contenido de consciencia-plena-actualizada dentro de la carpeta clonada de tu repositorio, reemplazando los archivos anteriores.
+Abre index.html con Live Server. Si no ves cambios, utiliza Ctrl+F5.
+En XAMPP conserva la carpeta C:/xampp/htdocs/consciencia-plena/ y abre http://localhost/consciencia-plena/index.html.
 
-ARCHIVOS
-index.html: estructura, contenido inicial y enlaces internos.
-css/styles.css: presentación básica adaptable; el acabado del boceto corresponde a T03.
-js/main.js: menú móvil, año y datos de contacto configurables.
-assets/img/logo.png: logotipo proporcionado.
+CAMBIOS
+Título y bienvenida de T05; menú Sobre mí; presentación de Sonia Vargas sin botón ni ilustración; resumen y tarjetas de servicios; botón Atención virtual que despliega información y acceso a contacto; solo teléfono y correo; pie con nombre, contactos y acceso a privacidad y derechos ARCO.
+Se conservaron los identificadores de sección para no romper los enlaces anteriores.
 
-PENDIENTES
-Confirma con la psicóloga las descripciones de servicios, trayectoria y datos de la clínica.
-Completa CONTACTO en js/main.js con teléfono, correo y redes confirmadas.
-Conserva los valores vacíos si aún no tienes los datos: no se generan enlaces ficticios.
-Este paquete no contiene backend, base de datos, cuestionario, agenda ni formularios de envío.
+CONFIGURACIÓN
+Completa telefono y correo en CONTACTO de js/main.js: los mismos datos aparecerán en el contacto y en el pie. Mientras estén vacíos se mostrará Información próximamente.
+Las descripciones de servicios requieren validación de la psicóloga.
+La trayectoria detallada, condiciones virtuales y aviso de privacidad/procedimiento ARCO quedan pendientes de información aprobada. No se incorporó un aviso legal ficticio.
 
-COMPROBACIÓN MANUAL T07
-- Selecciona cada opción del menú: debe desplazarse a la sección correspondiente.
-- Prueba Contactar, Ver servicios y Solicitar información.
-- En un ancho menor de 760 px abre Menú, selecciona un enlace y verifica su cierre.
-- Abre el menú y presiona Escape: debe cerrarse y devolver el foco al botón.
-- Recorre los controles con Tab y actívalos con el teclado.
-- Comprueba que Conocer más despliega la información disponible.
-- Verifica que el logo carga y no hay desplazamiento horizontal en celular.
-
-EVIDENCIAS
-Captura del HTML en VS Code, página en navegador y menú móvil desplegado.
-Documenta las pruebas realizadas. La revisión completa corresponde a T08.
+PRUEBAS EN NAVEGADOR
+Revisar menú de escritorio y móvil, enlaces internos, botón desplegable Atención virtual, pie y texto de privacidad. Revisar tamaños de computadora y celular.

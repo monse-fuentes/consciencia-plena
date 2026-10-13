@@ -2,8 +2,7 @@
 // Completa únicamente con datos confirmados. Deja vacíos los desconocidos.
 const CONTACTO = {
   telefono: '', // Ejemplo de formato: +525500000000 (sin espacios).
-  correo: '',
-  redes: [] // Ejemplo: { nombre: 'Instagram', url: 'https://www.instagram.com/...' }
+  correo: ''
 };
 const boton = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
@@ -44,15 +43,10 @@ function enlace(id, texto, url, externo = false) {
 }
 if (/^\+?\d{7,15}$/.test(CONTACTO.telefono)) enlace('telefono', CONTACTO.telefono, 'tel:' + CONTACTO.telefono);
 if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONTACTO.correo)) enlace('correo', CONTACTO.correo, 'mailto:' + CONTACTO.correo);
-const redes = document.getElementById('redes');
-const lista = document.createElement('ul');
-for (const red of CONTACTO.redes) {
-  try {
-    const url = new URL(red.url);
-    if (url.protocol !== 'https:' || !red.nombre) continue;
-    const li = document.createElement('li'); const a = document.createElement('a');
-    a.textContent = red.nombre; a.href = url.href; a.target = '_blank'; a.rel = 'noopener noreferrer';
-    li.append(a); lista.append(li);
-  } catch { /* Una URL inválida no genera un enlace. */ }
+
+// Los datos del pie se actualizan con la misma configuración del contacto.
+for (const id of ['telefono', 'correo']) {
+  const origen = document.getElementById(id);
+  const destino = document.getElementById(id + '-footer');
+  destino.replaceChildren(...Array.from(origen.childNodes, nodo => nodo.cloneNode(true)));
 }
-if (lista.children.length) redes.replaceChildren(lista);
