@@ -1,4 +1,4 @@
-CONSCIENCIA PLENA — ACTUALIZACIÓN T05, T06 Y T03
+CONSCIENCIA PLENA
 
 Extrae el ZIP y copia el contenido de consciencia-plena-actualizada dentro de la carpeta clonada de tu repositorio, reemplazando los archivos anteriores.
 Abre index.html con Live Server. Si no ves cambios, utiliza Ctrl+F5.

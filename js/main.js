@@ -1,7 +1,7 @@
 'use strict';
-// Completa únicamente con datos confirmados. Deja vacíos los desconocidos.
+
 const CONTACTO = {
-  telefono: '', // Ejemplo de formato: +525500000000 (sin espacios).
+  telefono: '', 
   correo: ''
 };
 const boton = document.getElementById('menu-toggle');
