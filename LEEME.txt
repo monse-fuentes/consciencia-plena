@@ -1,17 +1,40 @@
-CONSCIENCIA PLENA
+SITIO SONIA VARGAS · SPRINT 1
 
-Extrae el ZIP y copia el contenido de consciencia-plena-actualizada dentro de la carpeta clonada de tu repositorio, reemplazando los archivos anteriores.
-Abre index.html con Live Server. Si no ves cambios, utiliza Ctrl+F5.
-En XAMPP conserva la carpeta C:/xampp/htdocs/consciencia-plena/ y abre http://localhost/consciencia-plena/index.html.
+Abrir index.html para revisar. No requiere instalación, compilación, PHP ni base de datos para este sprint.
 
-CAMBIOS
-Título y bienvenida de T05; menú Sobre mí; presentación de Sonia Vargas sin botón ni ilustración; resumen y tarjetas de servicios; botón Atención virtual que despliega información y acceso a contacto; solo teléfono y correo; pie con nombre, contactos y acceso a privacidad y derechos ARCO.
-Se conservaron los identificadores de sección para no romper los enlaces anteriores.
+ANTES DE PUBLICAR
+1. Completar los datos reales autorizados en js/config.js: correo, teléfono, WhatsApp, formación, experiencia, clínica y cédula, según corresponda. Los campos vacíos no se publican. Sin contacto configurado, se muestra un aviso de próxima disponibilidad; no hay enlaces ficticios.
+2. Revisar los textos de servicios con Sonia. Misión y visión proceden del contenido recibido. La filosofía adapta “fortalecer tus debilidades” a “trabajar en tus áreas de oportunidad”; confirmar esa adaptación.
+3. El nombre visible usa Sonia Vargas, según la información aportada. Confirmar el nombre profesional para publicación.
+4. Incluye el logotipo completo de Consciencia Plena Psicología en el encabezado y su símbolo en el pie.
 
-CONFIGURACIÓN
-Completa telefono y correo en CONTACTO de js/main.js: los mismos datos aparecerán en el contacto y en el pie. Mientras estén vacíos se mostrará Información próximamente.
-Las descripciones de servicios requieren validación de la psicóloga.
-La trayectoria detallada, condiciones virtuales y aviso de privacidad/procedimiento ARCO quedan pendientes de información aprobada. No se incorporó un aviso legal ficticio.
+SUBIR A IONOS CON FILEZILLA
+1. Descomprimir el ZIP.
+2. Identificar en el panel IONOS la carpeta de destino del dominio.
+3. Guardar una copia de los archivos existentes antes de reemplazarlos.
+4. Subir index.html y las carpetas css, js y assets directamente a esa carpeta. No subir el ZIP ni este LEEME al sitio público.
+5. Si aparece una página anterior, comprobar el destino del dominio y la existencia de otro archivo de inicio, por ejemplo index.php. No borrar archivos sin respaldo.
+6. Abrir el dominio y recargar con Ctrl+F5. Revisar menú, anclas y contactos.
+7. Activar el certificado SSL para el dominio desde el panel de IONOS y comprobar HTTPS antes del lanzamiento.
 
-PRUEBAS EN NAVEGADOR
-Revisar menú de escritorio y móvil, enlaces internos, botón desplegable Atención virtual, pie y texto de privacidad. Revisar tamaños de computadora y celular.
+ALCANCE
+Inicio, servicios, problemáticas, condiciones, enfoque, misión, visión, filosofía, información profesional configurable, contacto y atención virtual. No incorpora agenda, quiz, pagos ni administración. Los enlaces externos se habilitan con datos reales en config.js. No se recopilan datos mediante formularios ni se usan fuentes o librerías externas.
+
+CORRESPONDENCIA CON EL DOCUMENTO
+HU-01: inicio y menú con enlaces internos; menú móvil.
+HU-02: tres servicios con acceso a contacto.
+HU-03: información de ansiedad y depresión.
+HU-04: condiciones de atención visibles en Atención virtual.
+HU-05: enfoque, misión, visión y filosofía recibidos. Trayectoria y clínica se muestran cuando se completan los datos reales en config.js.
+HU-08: sección de contacto; los enlaces reales se activan completando config.js.
+HU-19: paleta #167e7f, #021c2b y #ffffff; logotipo completo y símbolo originales.
+HU-35: explicación de la modalidad virtual y preparación de la consulta.
+IMPORTANTE: no presentar HU-05 ni HU-08 como completamente validadas hasta cargar y comprobar los datos autorizados.
+
+REDISEÑO VISUAL (esta versión)
+- Solo cambian index.html (estructura), css/styles.css y js/main.js. Los textos, los IDs, config.js, el logotipo y el símbolo originales no se modificaron.
+- El símbolo de la marca aparece grande en el inicio (se dibuja una vez al cargar) y de nuevo en contacto. Es un trazo vectorial dentro de la página; assets/img/simbolo.png sigue siendo el original.
+- Paleta sin cambios: #167e7f, #021c2b y #ffffff, más tonos derivados del teal para fondos suaves.
+- Se eliminó la numeración de secciones que no son secuencia; se conserva en los 3 pasos de Atención virtual.
+- Tamaño mínimo de texto 14 px; contraste revisado sobre fondos teal y oscuro. Respeta "reducir movimiento" del sistema.
+- Sigue sin fuentes ni librerías externas.
